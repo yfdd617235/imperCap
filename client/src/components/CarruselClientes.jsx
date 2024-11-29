@@ -58,8 +58,8 @@ function CarruselClientes() {
     };
 
     return (
-        <div className="py-16">
-            <div className="flex items-center justify-center py-10">
+        <div className="pb-10">
+            <div className="flex items-center justify-center">
                 <div className="flex flex-col gap-10 items-center px-4 lg:px-20 2xl:px-60">
                     <div className="h-100 w-full text-center">
                         <h2 className="text-2xl font-bold">{t('ourcustomers.title')}</h2>
@@ -80,7 +80,7 @@ function CarruselClientes() {
                                         <img
                                             src={item.img}
                                             alt={`Imagen ${index + 1}`}
-                                            className="w-20 h-20 p-2 mb-4 md:mb-0 md:mr-6 object-cover bg-yellow-600 rounded-md"
+                                            className="w-20 h-20 p-2 mb-4 md:mb-0 md:mr-6 object-cover bg-[#D9A84E] rounded-md"
                                         />
                                         <p className="text-base text-center md:text-left">
                                             {item.text}
@@ -93,13 +93,13 @@ function CarruselClientes() {
                         {/* Flechas de control */}
                         <button
                             onClick={prevSlide}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 text-white rounded-full shadow-md hover:bg-slate-700"
+                            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 text-[#BF863F] rounded-full shadow-md hover:bg-[#BF863F]"
                         >
                             <ChevronLeftIcon className="h-6 w-6" />
                         </button>
                         <button
                             onClick={nextSlide}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-white rounded-full shadow-md hover:bg-slate-700"
+                            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-[#BF863F] rounded-full shadow-md hover:bg-[#BF863F]"
                         >
                             <ChevronRightIcon className="h-6 w-6" />
                         </button>
@@ -118,7 +118,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-yellow-600"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-[#BF863F]"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title2')}</h2>
@@ -128,7 +128,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-yellow-600"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-[#BF863F]"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title3')}</h2>
@@ -138,7 +138,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-yellow-600"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-[#BF863F]"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title4')}</h2>

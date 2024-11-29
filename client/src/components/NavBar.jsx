@@ -64,10 +64,10 @@ function NavBar() {
               to={section}
               smooth={true}
               duration={1000}
-              className="cursor-pointer font-bold hover:text-yellow-950 relative group"
+              className="cursor-pointer font-bold hover:text-[#8c5423] relative group"
             >
               {t(`navbar.${section}`)}
-              <span className="block h-[2px] w-0 bg-yellow-950 group-hover:w-full transition-all duration-300"></span>
+              <span className="block h-[2px] w-0 bg-[#8c5423] group-hover:w-full transition-all duration-300"></span>
             </Link>
           ))}
 

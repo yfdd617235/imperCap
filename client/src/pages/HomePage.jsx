@@ -72,7 +72,7 @@ const HomaPage = () => {
         /> */}
 
           {/* Fondo negro con opacidad */}
-          <div className="absolute top-0 left-0 w-full h-full bg-yellow-900 opacity-50 -z-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#8C5423] opacity-45 -z-10" />
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
@@ -139,7 +139,7 @@ const HomaPage = () => {
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-yellow-600"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-[#BF863F]"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.vision')}</h2>
@@ -154,8 +154,8 @@ const HomaPage = () => {
 
 
         {/* Cards Section */}
-        <div id="services" className="snap-section section container mx-auto px-4 lg:px-20 2xl:px-60 mb-32">
-          <h2 className="text-lg md:text-2xl font-bold text-center py-16">{t('services.services')}</h2>
+        <div id="services" className="snap-section section mx-auto px-4 lg:px-20 2xl:px-60 mb-32 pt-28">
+          <h2 className="text-lg md:text-2xl font-bold text-center pb-16">{t('services.services')}</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {/* Card Template */}
             {[
@@ -190,7 +190,7 @@ const HomaPage = () => {
                 image: "ofi6.jpg",
               },
             ].map((card, index) => (
-              <div key={index} className="cursor-pointer h-full shadow-md rounded-lg relative group overflow-hidden hover:z-50">
+              <div key={index} className="cursor-pointer h-full shadow-xl rounded-lg relative group overflow-hidden hover:z-50">
                 {/* Image */}
                 <img
                   src={`${import.meta.env.BASE_URL}${card.image}`}
@@ -199,12 +199,12 @@ const HomaPage = () => {
                 />
                 {/* Title (visible initially) */}
                 <div className="p-4 md:p-6 text-center">
-                  <h5 className="text-base md:text-lg font-semibold text-yellow-950">{card.title}</h5>
+                  <h5 className="text-base md:text-lg font-semibold">{card.title}</h5>
                 </div>
                 {/* Description (hidden until hover) */}
-                <div className="p-4 md:p-6 absolute inset-0 bg-white flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h5 className="text-base md:text-lg font-semibold text-yellow-950">{card.title}</h5>
-                  <p className="text-sm md:text-base text-gray-700 mt-2 text-justify">{card.description}</p>
+                <div className="p-4 md:p-6 absolute inset-0 bg-white flex flex-col justify-center text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h5 className="text-base md:text-lg font-semibold">{card.title}</h5>
+                  <p className="text-sm md:text-base text-gray-700 mt-2">{card.description}</p>
                 </div>
               </div>
             ))}
