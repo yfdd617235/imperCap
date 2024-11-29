@@ -58,26 +58,19 @@ function NavBar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-7 items-center">
-          {['about', 'clients', 'services'].map((section) => (
+          {['about', 'clients', 'services', 'contact'].map((section) => (
             <Link
               key={section}
               to={section}
               smooth={true}
               duration={1000}
-              className="cursor-pointer font-bold hover:text-blue-900 relative group"
+              className="cursor-pointer font-bold hover:text-yellow-950 relative group"
             >
               {t(`navbar.${section}`)}
-              <span className="block h-[2px] w-0 bg-blue-900 group-hover:w-full transition-all duration-300"></span>
+              <span className="block h-[2px] w-0 bg-yellow-950 group-hover:w-full transition-all duration-300"></span>
             </Link>
           ))}
-          <Link
-            to="contact"
-            smooth={true}
-            duration={1000}
-            className="cursor-pointer text-white hover:bg-blue-900 bg-slate-800 rounded-md p-1 px-2"
-          >
-            {t('navbar.contact')}
-          </Link>
+
           <div className="flex items-center space-x-3">
             <button onClick={() => changeLanguage('en')} className="w-5 h-5">
               <img src={`${import.meta.env.BASE_URL}enFlag.png`} alt="English" />
@@ -91,7 +84,7 @@ function NavBar() {
         {/* Hamburger Menu Icon for Small Screens */}
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
-            <Bars3Icon className="h-8 w-8 text-gray-800" />
+            <Bars3Icon className="h-8 w-8 text-yellow-950" />
           </button>
         </div>
       </div>
@@ -100,27 +93,18 @@ function NavBar() {
       {isMenuOpen && (
         <div ref={menuRef} className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-50">
           <div className="flex flex-col space-y-4 px-8 py-6">
-            {['about', 'clients', 'services'].map((section) => (
+            {['about', 'clients', 'services', 'contact'].map((section) => (
               <Link
                 key={section}
                 to={section}
                 smooth={true}
                 duration={1000}
                 onClick={closeMenu}
-                className="font-bold hover:text-blue-900"
+                className="cursor-pointer font-bold hover:text-yellow-950"
               >
                 {t(`navbar.${section}`)}
               </Link>
             ))}
-            <Link
-              to="contact"
-              smooth={true}
-              duration={1000}
-              onClick={closeMenu}
-              className="text-white bg-slate-800 rounded-md p-1 px-2 hover:bg-blue-900"
-            >
-              {t('navbar.contact')}
-            </Link>
             <div className="flex items-center space-x-3">
               <button onClick={() => changeLanguage('en')}>
                 <img src={`${import.meta.env.BASE_URL}enFlag.png`} alt="English" className="w-6 h-6" />

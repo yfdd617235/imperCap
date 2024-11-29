@@ -94,7 +94,7 @@ const HomaPage = () => {
 
         {/*About us*/}
         <div id="about" className="snap-section section md:pt-36 text-sm md:text-base">
-          <div className="bg-slate-900 text-white">
+          <div className="bg-[#4d351f] text-white">
             <div className="container gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
 
               <div className="md:w-1/2 pt-10 md:py-10">
@@ -128,7 +128,7 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-slate-200">
+          <div className="bg-gradient-to-b from-white to-[#fff6ed]">
             <div className="container gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
 
               <div className="md:w-2/3 pt-10 md:py-10">
@@ -139,7 +139,7 @@ const HomaPage = () => {
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-yellow-900"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.vision')}</h2>
@@ -199,11 +199,11 @@ const HomaPage = () => {
                 />
                 {/* Title (visible initially) */}
                 <div className="p-4 md:p-6 text-center">
-                  <h5 className="text-base md:text-lg font-semibold text-blue-900">{card.title}</h5>
+                  <h5 className="text-base md:text-lg font-semibold text-yellow-950">{card.title}</h5>
                 </div>
                 {/* Description (hidden until hover) */}
                 <div className="p-4 md:p-6 absolute inset-0 bg-white flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h5 className="text-base md:text-lg font-semibold text-blue-900">{card.title}</h5>
+                  <h5 className="text-base md:text-lg font-semibold text-yellow-950">{card.title}</h5>
                   <p className="text-sm md:text-base text-gray-700 mt-2 text-justify">{card.description}</p>
                 </div>
               </div>

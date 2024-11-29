@@ -59,7 +59,7 @@ function CarruselClientes() {
 
     return (
         <div className="py-16">
-            <div className="bg-slate-950 flex items-center justify-center py-10">
+            <div className="bg-[#4d351f] flex items-center justify-center py-10">
                 <div className="container flex flex-col gap-10 items-center px-4 xl:px-14">
                     <div className="h-100 w-full text-center">
                         <h2 className="text-2xl font-bold text-white">{t('ourcustomers.title')}</h2>
@@ -80,7 +80,7 @@ function CarruselClientes() {
                                         <img
                                             src={item.img}
                                             alt={`Imagen ${index + 1}`}
-                                            className="w-20 h-20 p-2 mb-4 md:mb-0 md:mr-6 object-cover bg-slate-300 rounded-md"
+                                            className="w-20 h-20 p-2 mb-4 md:mb-0 md:mr-6 object-cover bg-yellow-100 rounded-md"
                                         />
                                         <p className="text-slate-300 text-base text-center md:text-left">
                                             {item.text}
@@ -108,7 +108,7 @@ function CarruselClientes() {
             </div>
 
             {/* Estadística clientes */}
-            <div className="bg-gradient-to-b from-white to-slate-200 py-16">
+            <div className="bg-gradient-to-b from-white to-yellow-50 py-16">
                 <div className="container gap-4 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title1')}</h2>
@@ -118,7 +118,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-yellow-900"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title2')}</h2>
@@ -128,7 +128,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-yellow-900"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title3')}</h2>
@@ -138,7 +138,7 @@ function CarruselClientes() {
                     </div>
 
                     {/* Barra divisoria */}
-                    <div className="hidden md:block h-40 w-[2px] bg-blue-900"></div>
+                    <div className="hidden md:block h-40 w-[2px] bg-yellow-900"></div>
 
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title4')}</h2>
