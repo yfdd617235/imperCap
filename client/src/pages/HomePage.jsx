@@ -93,9 +93,9 @@ const HomaPage = () => {
         </div>
 
         {/*About us*/}
-        <div id="about" className="snap-section section md:pt-36 text-sm md:text-base">
-          <div className="bg-[#4d351f] text-white">
-            <div className="container gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
+        <div id="about" className="snap-section section md:pt-28 text-sm md:text-base">
+          <div className="">
+            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 md:px-40 2xl:px-60">
 
               <div className="md:w-1/2 pt-10 md:py-10">
                 <h2 className="md:text-2xl font-bold text-center">{t('whoarewe.whoarewe')}</h2> <br />
@@ -128,8 +128,8 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-[#fff6ed]">
-            <div className="container gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
+          <div className="bg-gradient-to-b from-white to-zinc-200">
+            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 md:px-40 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.mission')}</h2>
@@ -139,7 +139,7 @@ const HomaPage = () => {
               </div>
 
               {/* Barra divisoria */}
-              <div className="hidden md:block h-40 w-[2px] bg-yellow-900"></div>
+              <div className="hidden md:block h-40 w-[2px] bg-yellow-600"></div>
 
               <div className="md:w-2/3 pb-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.vision')}</h2>
@@ -219,11 +219,11 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-white text-black w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
+        <div id="contact" className="snap-section section bg-yellow-700 text-black w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoICV.jpg`} alt="Logo" />
+                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoICVT.png`} alt="Logo" />
               </div>
 
               <div className="flex items-center justify-left p-6">
