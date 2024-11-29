@@ -128,7 +128,7 @@ const HomaPage = () => {
           </div>
 
           {/*Mision & Vision*/}
-          <div className="bg-gradient-to-b from-white to-zinc-200">
+          <div className="bg-gradient-to-b from-white to-[#f2f2f2]">
             <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
@@ -219,7 +219,7 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-yellow-700 text-black w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
+        <div id="contact" className="snap-section section bg-[#f2f2f2] text-black w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center justify-center">

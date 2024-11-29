@@ -60,12 +60,12 @@ function CarruselClientes() {
     return (
         <div className="py-16">
             <div className="flex items-center justify-center py-10">
-                <div className="container flex flex-col gap-10 items-center px-4 xl:px-14">
+                <div className="flex flex-col gap-10 items-center px-4 lg:px-20 2xl:px-60">
                     <div className="h-100 w-full text-center">
                         <h2 className="text-2xl font-bold">{t('ourcustomers.title')}</h2>
                     </div>
                     {/* Carrusel */}
-                    <div className="relative bg-zinc-300 rounded-xl">
+                    <div className="relative bg-[#f2f2f2] rounded-xl">
                         <div className="relative overflow-hidden max-w-xs md:max-w-full">
                             {/* Contenedor del item actual */}
                             <div
@@ -109,7 +109,7 @@ function CarruselClientes() {
 
             {/* Estadística clientes */}
             <div className="bg-gradient-to-b from-white to-zinc-100 py-16">
-                <div className="container gap-4 flex flex-col md:flex-row justify-center items-center mx-auto px-4 xl:px-14">
+                <div className="gap-4 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
                     <div className="md:w-2/3">
                         <h2 className="font-bold md:text-xl">{t('ourcustomers.title1')}</h2>
                         <p className="mt-2 text-gray-700 leading-relaxed ">
