@@ -72,22 +72,23 @@ const HomaPage = () => {
         /> */}
 
           {/* Fondo negro con opacidad */}
-          <div className="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-30 -z-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-yellow-900 opacity-50 -z-10" />
 
           {/* Logo */}
           <div className="absolute flex flex-col px-6 items-center text-white">
-            <h1
+            {/* <h1
               className="text-4xl md:text-6xl font-bold mb-4"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
             >
-              Inversiones Conti
-            </h1>
-            <p
+              CAPITAL IMPERIUM
+            </h1> */}
+            <img className="w-1/3 lg:w-1/6" src={`${import.meta.env.BASE_URL}logoICVT.png`} alt="Logo" />
+            {/* <p
               className="text-lg md:text-2xl font-light text-justify"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 1)" }}
             >
               {t('jumbotron.message')}
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -218,11 +219,11 @@ const HomaPage = () => {
 
 
         {/* Prefooter Section */}
-        <div id="contact" className="snap-section section bg-black text-white w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
+        <div id="contact" className="snap-section section bg-white text-black w-full text-left mt-16 p-4 md:p-8 bg-repeat bg-center min-h-[200px]">
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoIC.webp`} alt="Logo" />
+                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoICV.jpg`} alt="Logo" />
               </div>
 
               <div className="flex items-center justify-left p-6">
@@ -231,13 +232,13 @@ const HomaPage = () => {
 
                   {/* Correo electrónico */}
                   <a
-                    href="mailto:gerencia@inversionesconti.com"
+                    href="mailto:gerencia@capitalimperium.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-xs md:text-sm"
                   >
-                    <EnvelopeIcon className="w-4 h-4 text-white" />
-                    <span >gerencia@inversionesconti.com</span>
+                    <EnvelopeIcon className="w-4 h-4 text-black" />
+                    <span >gerencia@capitalimperium.com</span>
                   </a>
 
                   <div className="flex gap-4">
@@ -383,7 +384,7 @@ const HomaPage = () => {
           </div>
         </div>
         <footer className="bg-black text-white text-xs bottom-0 w-full text-center py-1">
-          <p>&copy; 2024 Inversiones Conti. All rights reserved.</p>
+          <p>&copy; 2024 Imperium Capital. All rights reserved.</p>
         </footer>
       </div>
 
