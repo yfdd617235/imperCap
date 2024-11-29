@@ -95,7 +95,7 @@ const HomaPage = () => {
         {/*About us*/}
         <div id="about" className="snap-section section md:pt-28 text-sm md:text-base">
           <div className="">
-            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 md:px-40 2xl:px-60">
+            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-1/2 pt-10 md:py-10">
                 <h2 className="md:text-2xl font-bold text-center">{t('whoarewe.whoarewe')}</h2> <br />
@@ -129,7 +129,7 @@ const HomaPage = () => {
 
           {/*Mision & Vision*/}
           <div className="bg-gradient-to-b from-white to-zinc-200">
-            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 md:px-40 2xl:px-60">
+            <div className="gap-10 flex flex-col md:flex-row justify-center items-center mx-auto px-4 lg:px-20 2xl:px-60">
 
               <div className="md:w-2/3 pt-10 md:py-10">
                 <h2 className="font-bold md:text-xl">{t('whoarewe.mission')}</h2>
@@ -154,7 +154,7 @@ const HomaPage = () => {
 
 
         {/* Cards Section */}
-        <div id="services" className="snap-section section container mx-auto px-4 xl:px-14 mb-32">
+        <div id="services" className="snap-section section container mx-auto px-4 lg:px-20 2xl:px-60 mb-32">
           <h2 className="text-lg md:text-2xl font-bold text-center py-16">{t('services.services')}</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {/* Card Template */}
@@ -223,7 +223,7 @@ const HomaPage = () => {
           <div className="px-4 md:px-32 lg:px-48">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center justify-center">
-                <img className="h-12 md:h-32" src={`${import.meta.env.BASE_URL}logoICVT.png`} alt="Logo" />
+                <img className="h-12 md:h-24" src={`${import.meta.env.BASE_URL}logoICHT.png`} alt="Logo" />
               </div>
 
               <div className="flex items-center justify-left p-6">
@@ -308,7 +308,7 @@ const HomaPage = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        fill="#ffffff"
+                        fill="#currentColor"
                         className="w-4 h-4"
                       >
                         <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.35C0 23.403.597 24 1.325 24h21.35C23.403 24 24 23.403 24 22.675V1.325C24 .597 23.403 0 22.675 0zm-4.133 12h-3.775v10h-4.017v-10h-2.5V9.5h2.5V7.5c0-2.775 1.533-4.5 4.5-4.5 1.275 0 2.5.1 2.5.1v2.758h-1.5c-1.25 0-1.5.59-1.5 1.5v1.492h3.021l-.48 3.5z" />
@@ -326,7 +326,7 @@ const HomaPage = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
+                        fill="#currentColor"
                         viewBox="0 0 24 24"
                         className="w-4 h-4"
                       >
