@@ -334,7 +334,6 @@ const HomaPage = () => {
 
                 </div>
               </div>
-
               <div className="flex items-center justify-left p-6">
                 <div className="flex flex-col space-y-3 text-left">
                   <h5 className="text-xs md:text-sm lg:text-lg font-bold">{t('contact.location')}</h5>
