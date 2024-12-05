@@ -40,7 +40,7 @@ const resources = {
                 card6text: "We offer advisory services on corporate governance and leadership practices, strengthening strategic decision-making and organizational structures.",
               },
               ourcustomers: {
-                title: "Our Clients",
+                title: "Our Customers",
                 carruseltext1: "Commitment to quality in every strategic solution.",
                 carruseltext2: "Tangible results for executive leadership.",
                 carruseltext3: "Exclusive and personalized advisory services.",
